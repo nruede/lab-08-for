@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+var pplent = prompt("How many people?");
+var ppl = parseInt(pplent,10);
+var costent = prompt("How much did it cost?");
+var cost = parseInt(costent,10);
+var tip;
+if (ppl<=6){
+var service = prompt("How was the service?");
+	if (service==="terrible"){
+		tip=0;
+	}
+	else if (service==="poor"){
+		tip=cost*.01;
+	}
+	else if (service==="ok"){
+		tip=cost*.15;
+	}
+	else if (service==="good"){
+		tip=cost*.2;
+	}
+	else if (service==="great"){
+		tip=cost*.5;
+	}
+}
+else{
+	tip=cost*.20;
+}
+console.log("The tip is "+tip);
+
+
+</script>
+</body>
+</html>
