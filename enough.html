@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+console.log("Let's find out if you ordered enough 'za.");
+var pieent = prompt("How many pies did you order?");
+var pie=parseInt(pieent,10);
+var pplent = prompt("How many people are eating 'za?");
+var ppl=parseInt(pplent,10);
+var slices=pie*8;
+var needed=ppl*2;
+var pp=slices/ppl;
+console.log(pie+" pies is equal to "+slices+" slices");
+console.log(ppl+" people need "+needed+" slices");
+if (pp>=needed){
+	console.log("ENOUGH!");
+} else {
+	console.log("MORE 'ZA!");
+}
+</script>
+</body>
+</html>
